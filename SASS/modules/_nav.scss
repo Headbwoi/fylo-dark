@@ -1,0 +1,48 @@
+//navbar section styling
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $intro_background;
+  padding: 3% 5% 1.8%;
+  margin-bottom: 3rem;
+  .nav-img {
+    width: 25%;
+  }
+  .navbar {
+    ul {
+      .nav-list {
+        list-style-type: none;
+        a {
+          color: $White;
+          text-decoration: none;
+          padding: 0 1.4rem;
+          font-size: 1.8rem;
+          opacity: .7;
+          &:hover{
+            opacity: 1;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 400px) {
+    .navbar {
+      ul {
+        .nav-list {
+          a {
+            padding: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 900px) {
+  nav {
+    .nav-img {
+      width: 12%;
+    }
+  }
+}

@@ -1,0 +1,502 @@
+@import url("https://fonts.google.com/specimen/Raleway");
+@import url("https://fonts.google.com/specimen/Open+Sans");
+@import "modules/modules-dir";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: $main_background;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: $footer_background;
+  border-radius: 5rem;
+}
+html::-webkit-scrollbar-thumb:hover {
+  width: 2rem;
+}
+
+body {
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 1.4rem;
+  background-color: $main_background;
+}
+
+nav .heading,
+.cta-btn {
+  font-family: Raleway;
+  font-weight: 700;
+}
+p {
+  opacity: 0.8;
+}
+
+/*features section*/
+.features {
+  .feat {
+    .feat-image {
+      margin: 5rem 0;
+      img {
+        display: block;
+        max-width: 100%;
+        margin: 1rem auto;
+      }
+    }
+    .feat-text {
+      .heading {
+        font-size: 3rem;
+        margin: 0.4rem;
+      }
+      p {
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 3rem 0;
+      }
+      a {
+        &:hover {
+          background: lighten($Blue, $amount: 20%);
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .feat-text {
+        padding: 0.5rem 30rem;
+        .heading {
+          font-size: 3.4rem;
+        }
+        p {
+          font-size: 2rem;
+          padding: 3rem 5rem 2rem;
+          line-height: 1.5;
+        }
+      }
+    }
+    @media (min-width: 769px) and (max-width: 1024px) {
+      .feat-text {
+        padding: 0.5rem 15rem;
+      }
+    }
+  }
+}
+
+//features section ends
+
+//info section starts
+.info {
+  margin: 10rem 0;
+  .info-content {
+    text-align: center;
+    .info-card {
+      display: block;
+      .info-image {
+        padding: 4rem 0;
+      }
+      .info-text {
+        .heading {
+          font-size: 2.5rem;
+          padding: 0.5rem 0 2rem;
+        }
+        p {
+          font-size: 2rem;
+          padding: 0 2rem;
+        }
+      }
+    }
+    @media (min-width: 1205px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      background-image: url("../images/bg-curvy-desktop.svg");
+      .info-card {
+        padding: 1rem 10rem;
+        .info-text {
+          p {
+            font-size: 1.8rem;
+          }
+        }
+      }
+      .card2 {
+        .info-image {
+          padding: 3.3rem 0;
+        }
+      }
+    }
+    @media (min-width: 769px) and (max-width: 1024px) {
+      .info-card {
+        .info-text {
+          padding-left: 10rem;
+          padding-right: 10rem;
+        }
+      }
+    }
+  }
+}
+// info section ends
+
+//works section
+
+.works {
+  .work-content {
+    .work-image {
+      margin-top: 5rem;
+      img {
+        display: block;
+        width: 100%;
+        margin: 0.1rem auto;
+      }
+      @media (min-width: 1024px) {
+        img {
+          width: 85%;
+        }
+      }
+    }
+    .work-text {
+      margin-top: 5rem;
+      .heading {
+        text-align: left;
+        font-size: 2.5rem;
+        padding-bottom: 2rem;
+      }
+      p {
+        font-size: 2rem;
+        padding-bottom: 1.8rem;
+      }
+      .work-link {
+        border-bottom: 1px solid $Cyan;
+        width: 40%;
+        margin-bottom: 4rem;
+        &:hover {
+          transform: scale(1.095);
+          border-bottom-color: $White;
+        }
+        a {
+          color: $Cyan;
+          display: flex;
+          align-items: center;
+          font-size: 1.1rem;
+          line-height: 1.5;
+          display: flex;
+          padding-bottom: 0.7rem;
+          &:hover {
+            color: $White;
+          }
+
+          img {
+            padding-left: 1.2rem;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      .work-link {
+        width: fit-content;
+      }
+    }
+
+    @media (min-width: 1205px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      .work-text {
+        margin-left: 4rem;
+        .heading {
+          font-size: 4rem;
+          padding-right: 20rem;
+        }
+        p {
+          font-size: 1.8rem;
+        }
+        .work-link {
+          width: fit-content;
+          a {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+//works section ends
+
+//team section starts
+.team {
+  .team-content {
+    padding: 2% 10%;
+    img {
+      width: 5%;
+      margin-bottom: -4.4rem;
+    }
+    .team-grid-card {
+      .team-card {
+        background-color: $testimonials_background;
+        margin: 4rem auto;
+        border-radius: 8px;
+        box-shadow: 1px 2px 20px black;
+        .card-content {
+          padding: 2rem 3rem 2rem;
+          letter-spacing: 0.1rem;
+          p {
+            font-size: 1.5rem;
+            padding: 2rem 0 3rem;
+          }
+          .card-profile {
+            display: flex;
+            color: $White;
+            padding-bottom: 1.5rem;
+            img {
+              width: 8vw;
+              height: 5vh;
+              border-radius: 50%;
+              margin-right: 1.4rem;
+            }
+            .profile-names {
+              display: block;
+              h4 {
+                padding-bottom: 0.5rem;
+              }
+            }
+          }
+        }
+      }
+      @media (min-width: 1205px) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 4rem;
+        padding: 2% 0;
+        .team-card {
+          .card-content {
+            .card-profile {
+              img {
+                width: 15%;
+                height: 5%;
+              }
+            }
+          }
+        }
+      }
+      @media (min-width: 769px) and (max-width: 1024px) {
+        padding: 2% 20%;
+      }
+    }
+  }
+}
+
+// teams section ends
+
+//signin section starts
+
+.signin {
+  position: relative;
+  .sign-card {
+    display: block;
+    width: 100%;
+    margin: 2.4rem auto;
+    background: $intro_background;
+    border-radius: 10px;
+    padding: 3rem;
+    margin-top: 11rem;
+    z-index: 100;
+    .sign-card-text {
+      .heading {
+        font-size: 2.7rem;
+        padding-bottom: 1.7rem;
+      }
+      p {
+        font-size: 2.1rem;
+        text-align: center;
+        padding: 0.2rem 2.5rem 3rem;
+      }
+    }
+    .sign-card-input {
+      div {
+        padding-bottom: 1rem;
+        input {
+          width: 90%;
+          cursor: pointer;
+        }
+      }
+    }
+    @media (min-width: 1205px) {
+      width: 60%;
+      .sign-card-text {
+        .heading {
+          font-size: 4rem;
+        }
+        p {
+          font-size: 1.8rem;
+        }
+      }
+      .sign-card-input {
+        display: flex;
+        div {
+          width: 100%;
+
+          .cta-btn {
+            width: 50%;
+            font-size: 1.22rem;
+            text-align: left;
+            &:hover {
+              background: lighten($Blue, $amount: 20%);
+            }
+          }
+          .input-btn {
+            width: 120%;
+            font-size: 1.4rem;
+            text-align: left;
+            &:hover {
+              background: #fff;
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 769px) and (max-width: 1204px) {
+      width: 70%;
+    }
+  }
+}
+
+//signin section ends
+.footer {
+  padding: 2% 8%;
+  margin-top: -20rem;
+  background: $footer_background;
+  color: $White;
+  .footer-img {
+    padding-top: 25rem;
+    padding-bottom: 4rem;
+    img {
+      width: 50%;
+    }
+    .runoffs {
+      display: none;
+    }
+  }
+  .footer-text {
+    padding-bottom: 4rem;
+    .footer-info {
+      display: block;
+      div {
+        display: flex;
+        padding-bottom: 4rem;
+        img {
+          width: 3rem;
+          height: 2rem;
+        }
+        p {
+          font-size: 1.8rem;
+          margin-left: 3rem;
+        }
+      }
+    }
+  }
+  .footer-links {
+    .links {
+      margin-bottom: 5rem;
+      margin-right: 5rem;
+      padding-right: 2rem;
+      a {
+        display: block;
+        color: $White;
+        font-size: 1.8rem;
+        padding-bottom: 2rem;
+        opacity: 0.7;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+    .links-1 {
+      @extend .links;
+      margin-right: 0;
+      padding-right: 0;
+    }
+  }
+  .footer-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .icons {
+      padding-bottom: 2rem;
+      display: flex;
+      i {
+        padding: 0.8rem 1rem;
+        margin: 0.5rem;
+        border: 1.7px solid #fff;
+        border-radius: 50%;
+        &:hover {
+          border-color: $Cyan;
+          color: $Cyan;
+        }
+      }
+    }
+  }
+  @media (min-width: 1025px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30rem;
+    gap: 1rem 7rem;
+    .footer-img {
+      display: block;
+      padding: 0;
+      img {
+        width: 40%;
+      }
+      .runoffs {
+        display: flex;
+        margin-top: 5rem;
+        img {
+          width: 15%;
+          height: 15%;
+          padding-right: 3rem;
+        }
+        p {
+          font-size: 2rem;
+        }
+      }
+    }
+    .footer-text {
+      .footer-info {
+        .runoff {
+          display: none;
+        }
+      }
+    }
+    .footer-links {
+      display: flex;
+      .links {
+        display: block;
+      }
+    }
+  }
+}
+
+.attribution {
+  font-size: 1.3rem;
+  text-align: center;
+  background: $footer_background;
+  color: $White;
+  a {
+    color: $Blue;
+    &:hover {
+      transform: scale(3);
+    }
+  }
+}
