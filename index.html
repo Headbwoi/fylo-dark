@@ -19,13 +19,21 @@
       rel="stylesheet"
       href="../fontawesome-free-5.15.4-web/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="CSS/styles.css" />
   </head>
   <body>
     <!-- navbar section -->
 
     <nav>
-      <img src="images/logo.svg" class="nav-img" />
+      <img src="images/logo.svg" class="nav-img" alt="logo" />
       <div class="navbar">
         <ul>
           <li class="nav-list">
@@ -66,7 +74,7 @@
       <div class="info-content">
         <div class="info-card">
           <div class="info-image">
-            <img src="images/icon-access-anywhere.svg" />
+            <img src="images/icon-access-anywhere.svg" alt="acccess anywhere" />
           </div>
           <div class="info-text">
             <h2 class="heading">Access your files, anywhere</h2>
@@ -78,7 +86,7 @@
         </div>
         <div class="info-card card2">
           <div class="info-image">
-            <img src="images/icon-security.svg" />
+            <img src="images/icon-security.svg" alt="icon-security" />
           </div>
           <div class="info-text">
             <h2 class="heading">Security you can trust</h2>
@@ -91,7 +99,7 @@
         </div>
         <div class="info-card">
           <div class="info-image">
-            <img src="images/icon-collaboration.svg" />
+            <img src="images/icon-collaboration.svg" alt="icon-collaboration" />
           </div>
           <div class="info-text">
             <h2 class="heading">Real-time collaboration</h2>
@@ -103,7 +111,7 @@
         </div>
         <div class="info-card">
           <div class="info-image">
-            <img src="images/icon-any-file.svg" />
+            <img src="images/icon-any-file.svg" alt="icon-any-file" />
           </div>
           <div class="info-text">
             <h2 class="heading">Store any type of file</h2>
@@ -153,7 +161,7 @@
 
     <section class="team" id="team">
       <div class="team-content">
-        <img src="images/bg-quotes.png" />
+        <img src="images/bg-quotes.png" alt="bg-quotes" />
         <div class="team-grid-card">
           <div class="team-card">
             <div class="card-content">
@@ -163,7 +171,11 @@
                 well-oiled collaboration machine.
               </p>
               <div class="card-profile">
-                <img src="images/profile-1.jpg" class="pro-img" />
+                <img
+                  src="images/profile-1.jpg"
+                  class="pro-img"
+                  alt="profile-one"
+                />
                 <div class="profile-names">
                   <h4>Satish Patel</h4>
                   <h6>Founder & CEO, Huddle</h6>
@@ -179,7 +191,11 @@
                 well-oiled collaboration machine.
               </p>
               <div class="card-profile">
-                <img src="images/profile-2.jpg" class="pro-img" />
+                <img
+                  src="images/profile-2.jpg"
+                  class="pro-img"
+                  alt="profile-2"
+                />
                 <div class="profile-names">
                   <h4>Bruce McKenzie</h4>
                   <h6>Founder & CEO, Huddle</h6>
@@ -195,7 +211,11 @@
                 well-oiled collaboration machine.
               </p>
               <div class="card-profile">
-                <img src="images/profile-3.jpg" class="pro-img" />
+                <img
+                  src="images/profile-3.jpg"
+                  class="pro-img"
+                  alt="profile-3"
+                />
                 <div class="profile-names">
                   <h4>Iva Boyd</h4>
                   <h6>Founder & CEO, Huddle</h6>
@@ -221,19 +241,26 @@
             would be happy to help you.
           </p>
         </div>
-        <div class="sign-card-input">
-          <div>
-            <input
-              type="email"
-              placeholder="email@example.com"
-              class="input-btn"
-              required
-            />
+        <form action="#">
+          <div class="sign-card-input">
+            <div>
+              <input
+                type="email"
+                placeholder="email@example.com"
+                class="input-btn"
+                required
+              />
+              <div class="error"></div>
+            </div>
+            <div>
+              <input
+                type="submit"
+                value="Get Started For Free"
+                class="cta-btn"
+              />
+            </div>
           </div>
-          <div>
-            <input type="submit" value="Get Started For Free" class="cta-btn" />
-          </div>
-        </div>
+        </form>
       </div>
     </section>
 
@@ -241,23 +268,24 @@
 
     <!-- footer section -->
     <footer class="footer">
+      <div class="iff">
+        <img src="images/logo.svg" alt="logo" />
+      </div>
+      <div class="footer-itself">
       <div class="footer-img">
-        <img src="images/logo.svg" alt="icon" />
-        <div class="runoffs">
-          <img src="images/icon-location.svg" />
-
+          <img src="images/icon-location.svg" alt="icon-location" />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua
           </p>
         </div>
-      </div>
+
 
       <!-- footer text -->
       <div class="footer-text">
         <div class="footer-info">
           <div class="runoff">
-            <img src="images/icon-location.svg" />
+            <img src="images/icon-location.svg" alt="icon-location" />
 
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -267,7 +295,7 @@
         </div>
         <div class="footer-info">
           <div>
-            <img src="images/icon-phone.svg" />
+            <img src="images/icon-phone.svg" alt="icon-phone" />
 
             <p>+1-543-123-4567</p>
           </div>
@@ -275,7 +303,7 @@
 
         <div class="footer-info">
           <div>
-            <img src="images/icon-email.svg" />
+            <img src="images/icon-email.svg" alt="icon-email" />
 
             <p>example@fylo.com</p>
           </div>
@@ -308,6 +336,7 @@
         </div>
       </div>
       <!-- footer icons -->
+    </div>
     </footer>
     <!-- footer section -->
 
@@ -317,7 +346,7 @@
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
         >. Coded by
-        <a href="https://johndoe.unaux.com/First.html" target="_blank"
+        <a href="http://johndoe.unaux.com/First.html" target="_blank"
           >HeadBwoi</a
         >.
       </p>
