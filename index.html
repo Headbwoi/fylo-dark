@@ -241,25 +241,23 @@
             would be happy to help you.
           </p>
         </div>
-        <form action="#">
-          <div class="sign-card-input">
-            <div>
+        <form action="#"class="sign-card-input" id="form">
+            <div class="inpu">
               <input
-                type="email"
+                type="text"
                 placeholder="email@example.com"
-                class="input-btn"
-                required
+                class="input-btn" id="email"
+               
               />
-              <div class="error"></div>
+              <div id="error-txt"></div>
             </div>
             <div>
               <input
-                type="submit"
+                type="submit" id="submit" onclick="checkInputs()"
                 value="Get Started For Free"
                 class="cta-btn"
               />
             </div>
-          </div>
         </form>
       </div>
     </section>
@@ -272,7 +270,7 @@
         <img src="images/logo.svg" alt="logo" />
       </div>
       <div class="footer-itself">
-      <div class="footer-img">
+        <div class="footer-img">
           <img src="images/icon-location.svg" alt="icon-location" />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -280,63 +278,62 @@
           </p>
         </div>
 
+        <!-- footer text -->
+        <div class="footer-text">
+          <div class="footer-info">
+            <div class="runoff">
+              <img src="images/icon-location.svg" alt="icon-location" />
 
-      <!-- footer text -->
-      <div class="footer-text">
-        <div class="footer-info">
-          <div class="runoff">
-            <img src="images/icon-location.svg" alt="icon-location" />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+              </p>
+            </div>
+          </div>
+          <div class="footer-info">
+            <div>
+              <img src="images/icon-phone.svg" alt="icon-phone" />
 
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua
-            </p>
+              <p>+1-543-123-4567</p>
+            </div>
+          </div>
+
+          <div class="footer-info">
+            <div>
+              <img src="images/icon-email.svg" alt="icon-email" />
+
+              <p>example@fylo.com</p>
+            </div>
           </div>
         </div>
-        <div class="footer-info">
-          <div>
-            <img src="images/icon-phone.svg" alt="icon-phone" />
+        <!-- footer-text ends -->
+        <!-- footer links -->
 
-            <p>+1-543-123-4567</p>
+        <div class="footer-links">
+          <div class="links">
+            <a href="#">About Us</a>
+            <a href="#"> Jobs</a>
+            <a href="#">Press</a>
+            <a href="#"> Blog</a>
+          </div>
+          <div class="links-1">
+            <a href="#">Contact Us </a>
+            <a href="#">Terms</a>
+            <a href="#"> Privacy </a>
           </div>
         </div>
+        <!-- footer links -->
 
-        <div class="footer-info">
-          <div>
-            <img src="images/icon-email.svg" alt="icon-email" />
-
-            <p>example@fylo.com</p>
+        <!-- footer icons -->
+        <div class="footer-icons">
+          <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
           </div>
         </div>
+        <!-- footer icons -->
       </div>
-      <!-- footer-text ends -->
-      <!-- footer links -->
-
-      <div class="footer-links">
-        <div class="links">
-          <a href="#">About Us</a>
-          <a href="#"> Jobs</a>
-          <a href="#">Press</a>
-          <a href="#"> Blog</a>
-        </div>
-        <div class="links-1">
-          <a href="#">Contact Us </a>
-          <a href="#">Terms</a>
-          <a href="#"> Privacy </a>
-        </div>
-      </div>
-      <!-- footer links -->
-
-      <!-- footer icons -->
-      <div class="footer-icons">
-        <div class="icons">
-          <i class="fab fa-facebook"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-instagram"></i>
-        </div>
-      </div>
-      <!-- footer icons -->
-    </div>
     </footer>
     <!-- footer section -->
 
@@ -351,5 +348,7 @@
         >.
       </p>
     </div>
+
+    <script src="app.js"></script>
   </body>
 </html>
